@@ -9,7 +9,7 @@
 	"output": {
 		"prefix": "c",
 		"body": [
-			"cout<< \t$1   <<end;",
+			"cout<<\t$1<<endl;",
 			// "using namespace std;",
 			// "                  ",
 			// "int main(){",
