@@ -33,9 +33,5 @@ int main(){
     cout<<arr.capacity()<<endl;
     arr.push_back(6);
     cout <<endl;
-
-    
-    
-    
     return 0;
 }
