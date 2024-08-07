@@ -14,5 +14,11 @@ int main(){/////
     for(int i=0;i<arr.size();i++){
         cout<<arr[i] << "  ";
     }
+    int n=0;
+    cout <<endl;
+    while(n<arr.size()){
+        cout <<arr[n]<< "  ";
+        n++;
+    }
     return 0;
 }
