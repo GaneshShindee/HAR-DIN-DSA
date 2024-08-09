@@ -23,8 +23,6 @@ int main(){
         int element;
         cin>>element;
         cout<<freq[element] <<endl;
-    }
-
-    
+    } 
     return 0;
 }
