@@ -9,7 +9,6 @@ int firstOccurance(int arr[],int size, int key){
         if(arr[mid]==key){
             ans=mid;
             end=mid-1;
-
         }
         else if(arr[mid]>key){
             end=mid-1;
