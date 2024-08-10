@@ -3,20 +3,25 @@
 using namespace std;
 
 void sortZeroAndOnes(vector<int>&v){
-    int zeros_count=0;
-    for(int ele:v){
-        if(ele==0){
-            zeros_count++;
+    int start=0;
+    int end=v.size()-1;
+
+    while(start<end){
+        if(v[start]==1 && v[end]==0){
+            v[start]=0;
+            v[end]=1;
+            start++;
+            end--;
+        }
+
+        if(v[start]==0){
+            start++;
+        }
+        if(v[end]==1){
+            end--;
         }
     }
-    for(int i=0;i<v.size();i++){
-        if(i<zeros_count){
-            v[i]=0;
-        }
-        else{
-            v[i]=1;
-        }
-    }
+    cout<<"endl" <<endl;
 }
                   
 int main(){
