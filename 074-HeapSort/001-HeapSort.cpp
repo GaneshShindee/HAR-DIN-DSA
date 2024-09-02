@@ -28,8 +28,39 @@ class heap{
               
         }
     }
+
+    void deleteFromHeap(){
+        if(size==0){
+            cout<<" nothing to delete";
+            return ;
+        }
+        arr[1]=arr[size];
+        size--;
+
+        // root node  to correct place 
+        int i =1;
+        while(i<size){
+            int leftIndex =2*i;
+            int rightIndex=2*i+1;
+
+            if(leftIndex<size && arr[i]<arr[leftIndex])
+            {
+                swap(arr[i],arr[leftIndex]);
+                i=leftIndex;
+            }
+            else if(rightIndex<size && arr[i]<arr[rightIndex])
+            {
+                swap(arr[i],arr[rightIndex]);
+                i=rightIndex;
+            }
+            else{
+                return ;
+            }
+        }
+
+    }
     void print(){
-        for (int i=0;i<=size;i++){
+        for (int i=1;i<=size;i++){
             cout<< arr[i] <<" "; 
         }
         cout <<endl; 
@@ -39,13 +70,28 @@ class heap{
 int main(){
     heap h;
     h.insert(50);
+    h.print();
     h.insert(30);
+    h.print();
     h.insert(40);
+    h.print();
     h.insert(20);
+    h.print();
     h.insert(90);
+    h.print();
     h.insert(10);
     h.print();
-    
+
+    h.deleteFromHeap();
+    h.print();
+    h.deleteFromHeap();
+    h.print();
+    h.deleteFromHeap();
+    h.print();
+    h.deleteFromHeap();
+    h.print();
+    h.deleteFromHeap();
+    h.print();
     
     return 0;
 }
