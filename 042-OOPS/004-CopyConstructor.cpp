@@ -7,9 +7,15 @@ class car{
         string name;
         string color;
 
-    car(string name,string color){
-        this->color=color;
-        this->name=name;
+    car(string namee,string colorr){
+        color=colorr;      //this for property of that same class
+        name=namee;
+    }
+
+    car(car &original){
+        cout<< "Copying" <<endl; 
+        this->name=original.name;
+        this->color=original.color;
     }    
 };
 
