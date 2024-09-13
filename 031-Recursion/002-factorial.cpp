@@ -8,7 +8,6 @@ int factorial(int n){
    
     int badi =n*factorial(n-1);
     return badi;
-
 }
                   
 int main(){
