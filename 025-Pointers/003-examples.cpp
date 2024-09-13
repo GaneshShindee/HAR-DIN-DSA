@@ -2,8 +2,8 @@
 using namespace std;
                   
 int main(){
-    int a=4;
-    int b=4;
-    cout<<	a*b<<endl;
+    char s[]= "hello";
+    char *p = s;
+    cout << s[0] << " " << p[0];
     return 0;
-}
+}   

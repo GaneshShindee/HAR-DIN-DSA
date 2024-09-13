@@ -5,8 +5,8 @@ int factorial(int n){
     if(n==0){
         return 1;
     }
-    int choti=factorial(n-1);
-    int badi =n*choti;
+   
+    int badi =n*factorial(n-1);
     return badi;
 
 }
