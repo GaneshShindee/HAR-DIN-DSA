@@ -10,7 +10,7 @@ void printArray(int arr[],int size){
 }
 void bubbleSort(int arr[],int size){
     for(int i=0;i<size;i++){
-        for(int j=0;j<size-i;j++){
+        for(int j=0;j<size-i-1;j++){
             if(arr[j]>arr[j+1]){
                 swap(arr[j],arr[j+1]);
             }
@@ -25,6 +25,6 @@ int main(){
     bubbleSort(arr,size);
     cout <<endl; 
 
-    printArray(arr,size-1);
+    printArray(arr,size);
     return 0;
 }
