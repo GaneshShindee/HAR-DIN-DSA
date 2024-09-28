@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "*.COBOL*": "cobol",
         "*.COB*": "cobol",
         "*.COBCOPY*": "cobol",
@@ -38,6 +39,7 @@
         "sstream": "cpp",
         "streambuf": "cpp",
         "tuple": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp"
     }
 }
